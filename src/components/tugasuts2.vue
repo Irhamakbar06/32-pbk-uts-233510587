@@ -14,6 +14,7 @@ const todos = ref([
 //membuat delate and update
 //menambahkan 4 data list
 //menambahkan filter untuk menyembunyikan alat gym yang sudah selesai 
+//membuat antarmuka modern dengan latar buram dan tema hijau
 const filteredTodos = computed(() => {
   return hideCompleted.value
     ? todos.value.filter((t) => !t.done)
