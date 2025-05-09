@@ -11,7 +11,7 @@ const todos = ref([
   { id: id++, text: 'Bench Press', done: true },
   { id: id++, text: 'Pull-up Bar', done: false }
 ])
-
+//membuat delate and update
 const filteredTodos = computed(() => {
   return hideCompleted.value
     ? todos.value.filter((t) => !t.done)
