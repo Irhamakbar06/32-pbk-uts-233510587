@@ -12,7 +12,7 @@ const todos = ref([
   { id: id++, text: 'Pull-up Bar', done: false }
 ])
 //membuat delate and update
-//menambahkan 4 data 
+//menambahkan 4 data list 
 const filteredTodos = computed(() => {
   return hideCompleted.value
     ? todos.value.filter((t) => !t.done)
